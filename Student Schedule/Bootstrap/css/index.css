@@ -1,0 +1,85 @@
+﻿body {
+    background: #EEEEEE;
+}
+
+.container {
+    background: #FFFFFF;
+    width: 1000px;
+    margin-top: 20px;    
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Arial';
+    font-weight: 100;
+    font-size: 34px;
+    color: #444;
+    padding: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 0;
+}
+
+.pad {
+    padding: 10px 30px 30px;
+}
+
+.pad2 {
+    margin-top: 20px;
+}
+
+.pad3 {
+    padding-left: 5px;
+}
+
+.table-fill {    
+    padding-top: 20px;
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;        
+    margin: auto;        
+    width: 100%;
+    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);*/
+    animation: float 5s infinite;
+    border-collapse: collapse;
+}
+
+.table-fill th {
+    color: #D5DDE5;
+    background: #1b1e24;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 15px 20px;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.table-fill tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color: #666B85;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.table-fill td {
+    text-align: left;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 14px;
+    /*text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);*/
+    border-right: 1px solid #C1C3D1;
+    border-left: 1px solid #C1C3D1;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 10px;    
+}

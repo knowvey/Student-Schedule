@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="student_scheduleModelStoreContainer" CdmEntityContainer="student_scheduleEntities">
+    <EntitySetMapping Name="stud_sched">
+      <EntityTypeMapping TypeName="student_scheduleModel.stud_sched">
+        <MappingFragment StoreEntitySet="stud_sched">
+          <ScalarProperty Name="idstud_sched" ColumnName="idstud_sched" />
+          <ScalarProperty Name="stud_id" ColumnName="stud_id" />
+          <ScalarProperty Name="stud_section" ColumnName="stud_section" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="student_scheduleModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="stud_section" ColumnName="stud_section" />
+          <ScalarProperty Name="stud_id" ColumnName="stud_id" />
+          <ScalarProperty Name="stud_bday" ColumnName="stud_bday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subjects">
+      <EntityTypeMapping TypeName="student_scheduleModel.subject">
+        <MappingFragment StoreEntitySet="subject">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="subject_list" ColumnName="subject_list" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="instructor" ColumnName="instructor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="subj_id" ColumnName="subj_id" />
+          <ScalarProperty Name="stud_section" ColumnName="stud_section" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

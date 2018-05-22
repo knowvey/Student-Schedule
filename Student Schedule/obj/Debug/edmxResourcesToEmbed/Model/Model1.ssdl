@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="studentschedModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="studentschedModelStoreContainer">
+    <EntitySet Name="stud_sched" EntityType="studentschedModel.Store.stud_sched" store:Type="Tables" Schema="studentsched" />
+    <EntitySet Name="student" EntityType="studentschedModel.Store.student" store:Type="Tables" Schema="studentsched" />
+    <EntitySet Name="subject" EntityType="studentschedModel.Store.subject" store:Type="Tables" Schema="studentsched" />
+  </EntityContainer>
+  <EntityType Name="stud_sched">
+    <Key>
+      <PropertyRef Name="idstud_sched" />
+    </Key>
+    <Property Name="idstud_sched" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="stud_id" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="stud_section" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="stud_section" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="stud_id" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="stud_bday" Type="varchar" Nullable="false" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="subject">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="subject_list" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="time" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="day" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="instructor" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="room" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="subj_id" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="stud_section" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+</Schema>

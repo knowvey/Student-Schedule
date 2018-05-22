@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="student_scheduleModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="student_scheduleEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="stud_sched" EntityType="student_scheduleModel.stud_sched" />
+    <EntitySet Name="students" EntityType="student_scheduleModel.student" />
+    <EntitySet Name="subjects" EntityType="student_scheduleModel.subject" />
+  </EntityContainer>
+  <EntityType Name="stud_sched">
+    <Key>
+      <PropertyRef Name="idstud_sched" />
+    </Key>
+    <Property Name="idstud_sched" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="stud_id" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="stud_section" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="stud_section" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="stud_id" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="stud_bday" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="subject">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="subject_list" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="time" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="day" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="instructor" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="room" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="subj_id" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="stud_section" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

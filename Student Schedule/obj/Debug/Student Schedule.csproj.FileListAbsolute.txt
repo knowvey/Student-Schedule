@@ -1,0 +1,7 @@
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\bin\Student Schedule.dll
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\bin\Student Schedule.pdb
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\bin\EntityFramework.dll
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\bin\EntityFramework.xml
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\obj\Debug\Student Schedule.csprojResolveAssemblyReference.cache
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\obj\Debug\Student Schedule.dll
+C:\Users\Novy John Albancia\Documents\Visual Studio 2012\Projects\Student Schedule\Student Schedule\obj\Debug\Student Schedule.pdb
